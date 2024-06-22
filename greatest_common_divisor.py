@@ -19,3 +19,19 @@ Input: str1 = "LEET", str2 = "CODE"
 Output: ""
 
 '''
+
+def gcdOfStrings(word1, word2):
+    divisor = []
+    i = 0 
+    j = 0
+
+    while len(word2) <= len(word1):
+        if word2[i] == word1[i]:
+            divisor.append(word1[i])
+            i += 1
+        else:
+            return ""
+        
+    return "".join(divisor)
+
+
