@@ -46,3 +46,6 @@ def mergeStrings (word1, word2):
             j+=1
     return "".join(merged_word)
 
+
+
+print(mergeStrings ("ab", "pqrs"))
