@@ -21,17 +21,19 @@ Output: ""
 '''
 
 def gcdOfStrings(word1, word2):
-    divisor = []
-    i = 0 
-    j = 0
+    if word1 == word2:
+        return word1
 
-    while len(word2) <= len(word1):
-        if word2[i] == word1[i]:
-            divisor.append(word1[i])
-            i += 1
-        else:
-            return ""
+    if len(word1) < len(word2):
+        word1, word2 = word2, word1
+
+    if word1[:len(word2)] == word2:
+        return gcdOfStrings(word1[len(word2):], word2)
+    
+    else:
+        return ""
+
         
-    return "".join(divisor)
 
 
+print(gcdOfStrings("ABABAB", "ABAB"))
