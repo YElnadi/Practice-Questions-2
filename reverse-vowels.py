@@ -32,7 +32,7 @@ def reverseVowels(s):
                 left += 1
                 right -= 1
         
-            return ''.join(s_list)
+        return ''.join(s_list)
         
 
 
