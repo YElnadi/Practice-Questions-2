@@ -36,4 +36,4 @@ def gcdOfStrings(word1, word2):
         
 
 
-print(gcdOfStrings("ABABAB", "ABAB"))
+print(gcdOfStrings("LEET", "CODE"))
