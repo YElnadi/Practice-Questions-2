@@ -25,3 +25,8 @@ Output: "example good a"
 Explanation: You need to reduce multiple spaces between two words to a single space in the reversed string.
 
 '''
+
+def reverseWords(s):
+        str_arr = s.split()
+        rev_str = ' '.join(str_arr[::-1])
+        return rev_str
